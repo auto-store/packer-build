@@ -22,6 +22,9 @@
     - name: download Consul binary 
       get_url: url=https://releases.hashicorp.com/consul/1.7.1/consul_1.7.1_linux_amd64.zip dest=/etc/tempdownload
 
+    - name: download packer binary
+      get_url: url=https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd64.zip dest=/etc/tempdownload
+
     - name: Unzip Vault Binary
       unarchive: 
         src: /etc/tempdownload/vault_1.3.2_linux_amd64.zip 
@@ -31,6 +34,11 @@
       unarchive: 
         src: /etc/tempdownload/consul_1.7.1_linux_amd64.zip
         dest: /usr/local/bin
+
+    - name: Unzip Packer binary  
+      unarchive:
+        src: /etc/tempdownload/packer_1.5.4_linux_amd64.zip
+        dest: /usr/local/bin 
 
 
 
