@@ -3,7 +3,7 @@
       {
         "type": "googlecompute",
         "project_id": "tharris-demo-env",
-        "source_image": "centos7",
+        "source_image": "centos-7-v20200309",
         "ssh_username": "tharris",
         "zone": "europe-west2-c",
         "image_description" : "vault_consul_dev",
