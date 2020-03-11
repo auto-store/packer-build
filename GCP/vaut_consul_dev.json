@@ -7,7 +7,7 @@
         "ssh_username": "tharris",
         "zone": "eurpore-west2-c",
         "image_description" : "vault_consul_dev",
-        "image_name": "vault_consul_dev",  }
+        "image_name": "vault_consul_dev"  }
     ], 
     "provisioners":[
       {
