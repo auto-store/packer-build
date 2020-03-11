@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yum update
-yum install ansible 
+sudo yum update
+sudo yum install ansible 
