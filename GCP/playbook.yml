@@ -10,12 +10,18 @@
            - wget
         state: present 
 
+    - name: Recursively remove directory
+      file: 
+        path: /etc/tempdownload 
+        state: present 
+
+
     - name: download vault binary 
-      get_url: url=https://releases.hashicorp.com/vault/1.3.2/vault_1.3.2_linux_amd64.zip 
+      get_url: url=https://releases.hashicorp.com/vault/1.3.2/vault_1.3.2_linux_amd64.zip dest=/etc/tempdownload
 
     - name: Unzip Vault Binary
       unarchive: 
-        src: vault_1.3.2_linux_amd64.zip 
+        src: /etc/tempdownload/vault_1.3.2_linux_amd64.zip 
         dest: /usr/local/bin 
 
        
