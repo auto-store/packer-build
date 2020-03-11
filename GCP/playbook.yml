@@ -10,10 +10,10 @@
            - wget
         state: present 
 
-    - name: Recursively remove directory
+    - name: create binary directory 
       file: 
         path: /etc/tempdownload 
-        state: present 
+        state: directory
 
 
     - name: download vault binary 
