@@ -5,9 +5,9 @@
         "project_id": "tharris-demo-env",
         "source_image": "centos7",
         "ssh_username": "tharris",
-        "zone": "eurpore-west2-c",
+        "zone": "europe-west2-c",
         "image_description" : "vault_consul_dev",
-        "image_name": "vault_consul_dev"  }
+        "image_name": "vault-consul-dev"  }
     ], 
     "provisioners":[
       {
