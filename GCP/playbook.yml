@@ -60,7 +60,24 @@
         src: /etc/tempdownload/packer_1.5.4_linux_amd64.zip
         dest: /usr/local/bin 
 
-    - import_tasks: docker.yml     
+    - name: Add Docker repo
+      get_url:
+        url: https://download.docker.com/linux/centos/docker-ce.repo
+        dest: /etc/yum.repos.d/docker-ce.repo
+      become: yes
+ 
+    - name: Install Docker
+      package:
+        name: docker-ce
+        state: latest
+      become: yes
+ 
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+      become: yes
 
 
 
