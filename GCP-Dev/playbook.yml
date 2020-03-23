@@ -11,7 +11,7 @@
            - wget
            - bind-utils
            - yum-utils
-           - lvm-2 
+           - lvm2
            - device-mapper-persistent-data
         state: present 
 
