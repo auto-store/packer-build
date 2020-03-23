@@ -6,8 +6,8 @@
         "source_image": "centos-7-v20200309",
         "ssh_username": "tharris",
         "zone": "europe-west2-c",
-        "image_description" : "vault_consul_dev",
-        "image_name": "vault-consul-dev"  }
+        "image_description" : "stack-dev",
+        "image_name": "stack-dev"  }
     ], 
     "provisioners":[
       {
