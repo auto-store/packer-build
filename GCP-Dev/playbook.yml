@@ -37,7 +37,7 @@
       get_url: url=https://releases.hashicorp.com/consul/1.7.1/consul_1.7.1_linux_amd64.zip dest=/etc/tempdownload
 
     - name: download Nomad binary
-      get_url: url=https://releases.hashicorp.com/nomad/0.10.4/nomad_0.10.4_linux_amd64.zip dest=/etc/tempdownload
+      get_url: url=https://releases.hashicorp.com/nomad/0.11.0/nomad_0.11.0_linux_amd64.zip dest=/etc/tempdownload
 
     - name: download Terraform Binary 
       get_url: url=https://releases.hashicorp.com/terraform/0.12.23/terraform_0.12.23_linux_amd64.zip dest=/etc/tempdownload
@@ -60,7 +60,7 @@
 
     - name: Unzip Nomad binary
       unarchive: 
-        src: /etc/tempdownload/nomad_0.10.4_linux_amd64.zip
+        src: /etc/tempdownload/nomad_0.11.0_linux_amd64.zip
         dest: /usr/local/bin
     
     - name: Unzip Terraform binary
