@@ -4,7 +4,7 @@
         "type": "googlecompute",
         "project_id": "tharris-demo-env",
         "source_image": "centos-7-v20200309",
-        "ssh_username": "tharris",
+        "ssh_username": "tomh",
         "zone": "europe-west2-c",
         "image_description" : "stack-dev",
         "image_name": "stack-dev"  }
@@ -13,11 +13,6 @@
       {
         "type": "shell",
         "script": "script.sh"
-      },
-
-      {
-        "type": "ansible-local",
-        "playbook_file": "playbook.yml"
       }
     ]
   }
