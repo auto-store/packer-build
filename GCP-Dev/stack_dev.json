@@ -13,6 +13,11 @@
       {
         "type": "shell",
         "script": "script.sh"
+      },
+
+      {
+        "type": "ansible-local",
+        "playbook_file": "playbook.yml"
       }
     ]
   }
